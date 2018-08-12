@@ -1,0 +1,48 @@
+52 Cards in a deck
+
+4 suits per card
+
+Card values:
+A,2,3,4,5,6,7,8,9,10,J,Q,K
+1,2,3,4,5,6,7,8,9,10,11,12,13
+
+H,D,S,C
+1,2,3,4
+
+Card ADT
+Int hash;
+int Value : id < higher order bits
+
+Suit: id<lower order bits
+int hash ()
+Return id;
+
+
+Deck ADT
+Contains Array of Cards
+
+Functions
+
+Shuffle
+Shuffle:
+Input: None
+Output: Array of size 52, each index into array returns a Card Value that are random in nature
+
+Algorithm strategy:
+Select a number at random between 1-13 and a letter at random
+Check to see if the number is already in the array
+If not insert into the array
+
+Algorithm
+Deck = new;
+hash: Rand(1-52)
+card: CreateCard(hash)
+
+!InDeck(Card){Deck.addCard(card)
+
+InDeck
+Loop i
+Array[i].hash == Card.hash();
+ result = true;
+Break;
+return result;
