@@ -9,6 +9,10 @@ A,2,3,4,5,6,7,8,9,10,J,Q,K
 H,D,S,C
 1,2,3,4
 
+to use a hash might try values of 
+011 for a Ace of hearts
+131 for King of hearts
+
 Card ADT
 Int hash;
 int Value : id < higher order bits
